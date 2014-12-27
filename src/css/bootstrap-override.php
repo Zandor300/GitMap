@@ -61,7 +61,7 @@
   background-color: #2e2e2e;
   border-color: #2fb0d4;
   border-bottom: 5px solid <?php echo getConfig('color'); ?>;
-  box-shadow: 0 0 15px <?php echo getConfig('color'); ?>;
+  box-shadow: 0px 0px 15px <?php echo getConfig('color'); ?>;
 }
 .navbar-footer {
   border-top: 5px solid <?php echo getConfig('color'); ?>;
@@ -198,6 +198,10 @@ a:hover {
 .jumbotron-page {
   padding:10px;
 }
+.jumbotron > .container {
+    height: auto;
+}
+
 
 
 #banner h1,
@@ -348,6 +352,9 @@ a {
  
 .navbar .nav > li > .dropdown-menu:after {
  
+}
+.navbar > .container {
+    height:auto;
 }
 .dropup > .dropdown-menu:after {
   border-bottom: 0;
