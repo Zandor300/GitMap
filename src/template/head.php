@@ -117,7 +117,7 @@ echo "hi";
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>GitMap</title>
 
-		<link rel="icon" type="image/png" href="">
+		<link rel="icon" type="image/png" href="img/logo-black.png">
 
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -164,7 +164,7 @@ echo "hi";
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php" style="color:white;">GitMap</a>
+					<a class="navbar-brand" href="index.php" style="color:white;"><a href="img/logo-white.png" height="60px">GitMap</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

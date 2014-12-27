@@ -1,0 +1,8 @@
+ErrorDocument 404 /gitmap/404.php
+
+RewriteEngine on
+
+RewriteRule ^/gitmap/index.php$ /gitmap [R]
+
+RewriteCond %{REQUEST_URI} ([a-z\-]+)
+RewriteRule ^([a-z\-]+)(/)?$ /gitmap/user.php
