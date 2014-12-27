@@ -1,0 +1,21 @@
+body {
+	height:100%;
+	background: #E8E8E8;
+}
+
+.content { 
+	padding-top: 70px; 
+}
+.nav-avatar {
+  height: 45px;
+  padding: 2px 0px;
+}
+
+
+
+.pageblock {
+	height: 120px; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+}
