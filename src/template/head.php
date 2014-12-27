@@ -131,20 +131,6 @@ echo "hi";
 			    $('[rel="tooltip"]').tooltip({'placement': 'top'});
 			}
 		</script>-->
-		<SCRIPT TYPE="text/javascript">
-			<!--
-			function popup(mylink, windowname) {
-				if (! window.focus)return true;
-				var href;
-				if (typeof(mylink) == 'string')
-				href=mylink;
-				else
-				href=mylink.href;
-				window.open(href, windowname, 'width=400,height=600,scrollbars=no');
-				return false;
-			}
-			//-->
-		</SCRIPT>
 
 		<!--<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>-->
 		<script src="js/bootstrap.js"></script>
@@ -164,7 +150,7 @@ echo "hi";
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php" style="color:white;"><a href="img/logo-white.png" height="60px">GitMap</a>
+					<a class="navbar-brand" href="index.php" style="padding-top:10px; color:white;"><img src="img/logo-white.png" height="30" style="vertical-align:middle;"> GitMap</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -176,4 +162,3 @@ echo "hi";
 		  </div>
 		</nav>
 		<div id="wrapper">
-		<br>

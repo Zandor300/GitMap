@@ -1,7 +1,6 @@
 <?php
 	$page="index";
 	include_once 'template/head.php';
-echo 'hi';
 
 	//$creationsql = "SELECT * FROM creations ORDER BY CONVERT(id, UNSIGNED INTEGER) DESC;";
 	//$creationresult = mysql_query($creationsql);
@@ -12,7 +11,7 @@ echo 'hi';
 <br><br>
 <div class="jumbotron">
 	<div class="container">
-		<h1>GitMap</h1>
+		<img src="img/logo-black.png" height="64"> <h1>GitMap</h1>
 		<p>The most awesome GitHub alternative ever!</p>
 	</div>
 </div>
