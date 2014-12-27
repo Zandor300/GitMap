@@ -164,7 +164,7 @@ echo "hi";
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php" style="color:white; padding-top:8px; padding:2px;"><img src="img/logo.png" height="60px"></a>
+					<a class="navbar-brand" href="index.php" style="color:white;">GitMap</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

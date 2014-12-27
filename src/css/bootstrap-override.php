@@ -53,20 +53,6 @@
     border-radius: 6px 0 6px 6px;
 }
 
-
-.navbar-brand {
-  float: left;
-  height: 50px;
-  font-size: 18px;
-  line-height: 20px;
-}
-.navbar-brand-profile {
-  float: left;
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
-}
 .navbar-header > a:hover,
 .navbar-header > a:focus {
   background-color: #1b9bff;
@@ -129,12 +115,7 @@ min-height: calc(100% - 55px);
 .navbar-brand:hover, 
 .navbar-brand:focus {
     color: #fff;
-    height: 75px;
-    padding: 2px;
     background-color: <?php echo getConfig('color'); ?>;
-}
-.navbar-brand > img {
-    vertical-align: middle;
 }
 
 
