@@ -9,12 +9,6 @@ echo 'hi';
 	//	exit('Error code creation <br>');
 ?>
 
-<script>
-	$(document).ready(function() {
-		$('.jumbotron').scrollDown();
-	});
-</script>
-
 <br><br>
 <div class="jumbotron">
 	<div class="container" style="text-align: center;">
