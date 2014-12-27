@@ -1,7 +1,7 @@
 <?php
 	$server = "192.168.1.106";
 	$username = "git";
-	$password = "gitweb";
+	$password = "git";
 	$database = "gitmap";
 
 	$connection = mysqli_connect($server, $username,  $password, $database);
