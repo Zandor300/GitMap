@@ -1,6 +1,7 @@
 <?php
 	$page="index";
 	include_once 'template/head.php';
+echo 'hi';
 
 	//$creationsql = "SELECT * FROM creations ORDER BY CONVERT(id, UNSIGNED INTEGER) DESC;";
 	//$creationresult = mysql_query($creationsql);
@@ -21,18 +22,6 @@
 		<p>The most awesome GitHub alternative ever!</p>
 	</div>
 </div>
-
-<!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height:742px">
-	
-	<div class="carousel-inner" role="listbox">
-		<div class="item active">
-			<img src="img/samen.jpg" height="742px">
-			<div class="carousel-caption">
-				<img src="img/logo.png" width="75%">
-			</div>
-		</div>
-	</div>
-</div> -->
 
 <div class="container content">
 	<div class="row">
