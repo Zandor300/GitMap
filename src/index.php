@@ -15,9 +15,10 @@
 </script>
 
 <br><br>
-<div class="jumbotron" style="background: url('img/samen.jpg') no-repeat; background-size: 100%; color:white;">
+<div class="jumbotron">
 	<div class="container" style="text-align: center;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<img src="img/logo.png" width="50%">
+		<h1>GitMap</h1>
+		<p>The most awesome GitHub alternative ever!</p>
 	</div>
 </div>
 
@@ -37,13 +38,7 @@
 	<div class="row">
 
 		<div class="col-md-9">
-			<h2>Laatste nieuws</h2>
-			<div class="panel panel-default">
-				<div class="panel-heading"><h4>Nieuws titel komt hier</h4></div>
-				<div class="panel-body">
-					Nieuws berichtje komt hier
-				</div>
-			</div>
+			<p>Content</p>
 		</div>
 
 		<div class="col-md-3">
