@@ -11,7 +11,7 @@ echo 'hi';
 
 <br><br>
 <div class="jumbotron">
-	<div class="container" style="text-align: center;">
+	<div class="container">
 		<h1>GitMap</h1>
 		<p>The most awesome GitHub alternative ever!</p>
 	</div>

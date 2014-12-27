@@ -10,11 +10,12 @@
 	include_once 'meta/connect.php';
 
 	function getConfig($key) {
-		$sql = "SELECT * FROM config WHERE `key`='".mysql_real_escape_string($key)."';";
-		$result = $connection->mysqli_query($sql);
+		global $connection;
+		$sql = "SELECT * FROM config WHERE `key`='".mysqli_real_escape_string($connection, $key)."';";
+		$result = mysqli_query($connection, $sql);
 		if ($result == false)
 			exit('Error code config <br>'.mysql_error());
-		$row = mysql_fetch_assoc($result);
+		$row = mysqli_fetch_assoc($result);
 		return $row['value'];
 	}
 
@@ -104,6 +105,8 @@
 			return $miles;
 		}
 	}
+
+echo "hi";
 ?>
 
 <!DOCTYPE html>
@@ -150,8 +153,8 @@
 		<script src="js/tab.js"></script>
 
 	</head>
-
 	<body>
+	<?php echo "hi"; ?>
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		  	<div class="container">
 				<div class="navbar-header">

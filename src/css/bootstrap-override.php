@@ -93,8 +93,6 @@ position:relative;
 min-height: -moz-calc(100% - 55px);
 /* WebKit */
 min-height: -webkit-calc(100% - 55px);
-/* Opera */
-min-height: -o-calc(100% - 55px);
 /* Standard */
 min-height: calc(100% - 55px);
 }
@@ -104,7 +102,6 @@ min-height: calc(100% - 55px);
 }
 #contentage {
     min-height: 100%;
-    height: auto !important;
     height: 100%;
     margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
 }
@@ -133,7 +130,7 @@ min-height: calc(100% - 55px);
 .navbar-brand:focus {
     color: #fff;
     height: 75px;
-    padding: 2.5;
+    padding: 2px;
     background-color: <?php echo getConfig('color'); ?>;
 }
 .navbar-brand > img {
@@ -156,7 +153,7 @@ a {
 }
 a:hover {
   color: <?php echo getConfig('color'); ?>;
-  text-shadow: 0px 0px 15px <?php echo getConfig('color'); ?>;
+  text-shadow: 0 0 15px <?php echo getConfig('color'); ?>;
 }
 ::selection {
   background: <?php echo getConfig('color'); ?>; /* WebKit/Blink Browsers */
@@ -211,7 +208,7 @@ a:hover {
     width: 100%;
     position: relative;
     padding: 10px 0;
-  margin-bottom:10;
+  margin-bottom:10px;
 }
 
 .jumbotron {
@@ -225,12 +222,12 @@ a:hover {
 #banner h1,
 #banner .h1 {
   color: inherit;
-  text-shadow: 0px 0px 15px <?php echo getConfig('color'); ?>;
+  text-shadow: 0 0 15px <?php echo getConfig('color'); ?>;
   font-size: 75px;
 }
 #banner img,
 #banner .img {
-  box-shadow: 0px 0px 15px <?php echo getConfig('color'); ?>;
+  box-shadow: 0 0 15px <?php echo getConfig('color'); ?>;
 }
 
 
@@ -249,7 +246,7 @@ a:hover {
   color: #fff;
   background-color: <?php echo getConfig('color'); ?>;
   border-color: <?php echo getConfig('color'); ?>;
-  box-shadow: 0px 0px 15px <?php echo getConfig('color'); ?>;
+  box-shadow: 0 0 15px <?php echo getConfig('color'); ?>;
 }
 .btn-info {
   color: #fff;
@@ -265,7 +262,7 @@ a:hover {
   color: #fff;
   background-color: #FF0000;
   border-color: #FF0000;
-  box-shadow: 0px 0px 15px #FF0000;
+  box-shadow: 0 0 15px #FF0000;
 }
 .btn-danger {
   color: #fff;
@@ -282,7 +279,7 @@ a:hover {
 .div-users.active {
   color: #fff;
   background-color: #FF6600;
-  box-shadow: 0px 0px 15px #FF6600;
+  box-shadow: 0 0 15px #FF6600;
 }
 .div-users > a {
   color: #000;
@@ -293,13 +290,13 @@ a:hover {
 .div-users.active > a {
   color: #fff;
   background-color: #FF6600;
-  box-shadow: 0px 0px 15px #FF6600;
+  box-shadow: 0 0 15px #FF6600;
 }
 .div-users {
   color: #000;
   background-color: #fff;
-  margin-bottom: 5;
-  margin-top: 5;
+  margin-bottom: 5px;
+  margin-top: 5px;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
