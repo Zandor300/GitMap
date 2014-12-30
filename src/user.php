@@ -56,17 +56,18 @@ include_once 'template/head.php';
                     <?php
                     while($reporow = mysqli_fetch_assoc($reporesult)) {
                         ?>
-                        hi
                         <div class="panel-body">
+                            <a href="<?php echo getConfig('root'); ?><?php echo $row['username']; ?>/<?php echo $reporow['name']; ?>">
+                                <?php if($reporow['logo'] != "") { ?>
+                                    <img src="<?php echo getConfig('root') . $reporow['logo']; ?>" height="130" class="img-rounded" alt="<?php echo $reporow['name']; ?>">
+                                <?php } ?>
+                            </a>
                             <a href="<?php echo getConfig('root'); ?><?php echo $row['username']; ?>/<?php echo $reporow['name']; ?>" style="font-size: 50px;"><?php echo $reporow['name']; ?></a>
+                            <p><?php echo $reporow['desc']; ?></p>
                         </div>
                     <?php
                     }
                     ?>
-                    <hr>
-                    <div class="panel-body">
-                        <a href="<?php echo getConfig('root'); ?><?php $row['username']; ?>/Repo" style="font-size: 50px;">Repo</a>
-                    </div>
                 </div>
             </div>
 

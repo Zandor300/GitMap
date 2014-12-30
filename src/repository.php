@@ -38,20 +38,25 @@ include_once 'template/head.php';
     <br><br>
     <div class="jumbotron jumbotron-page">
         <div class="container">
-            <h1><img src="<?php echo getConfig('root') . $row['logo']; ?>" height="100" class="img-rounded" alt="<?php echo $name; ?>"> <?php echo '<a href="' . getConfig('root') . $user . '">' . $user . '</a> / ' . $name; ?></h1>
+            <?php if($row['logo'] != "") { ?>
+                <div class="pull-left" style="padding-right: 5px">
+                    <img src="<?php echo getConfig('root') . $row['logo']; ?>" height="130" class="img-rounded" alt="<?php echo $name; ?>">
+                </div>
+            <?php } ?>
+            <h1><?php echo '<a href="' . getConfig('root') . $user . '">' . $user . '</a> / ' . $name; ?></h1>
+            <h4><?php echo $row['desc']; ?></h4>
         </div>
     </div>
 
     <div class="container content">
         <div class="row">
 
-            <div class="col-md-3">
-                <img src="<?php echo getConfig('root') . $row['avatar']; ?>" width="40px" class="img-rounded" alt="<?php echo $user; ?>">
-                <h1><b><?php echo $row['fullname']; ?></b><br><small><?php echo $user; ?></small></h1>
-            </div>
-
             <div class="col-md-9">
                 -Files-
+            </div>
+
+            <div class="col-md-3">
+                Sidebar
             </div>
 
         </div>
