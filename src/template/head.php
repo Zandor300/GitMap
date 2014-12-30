@@ -119,6 +119,7 @@
 
 		<link rel="stylesheet" href="<?php echo getConfig('root'); ?>css/style.css">
 		<link rel="stylesheet" href="<?php echo getConfig('root'); ?>css/bootstrap.css">
+		<link rel="stylesheet" href="<?php echo getConfig('root'); ?>css/bootstrap.vertical-tabs.css">
 		<?php //<link rel="stylesheet" href="css/bootstrap-override.css"> ?>
 		<?php include_once ('css/bootstrap-override.php'); ?>
 		<?php //<link rel="stylesheet" href="css/scrolling-nav.css"> ?>

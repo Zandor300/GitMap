@@ -31,6 +31,8 @@ $userrow = mysqli_fetch_assoc($userresult);
 
 $user = $userrow['username'];
 
+$tab = "";
+
 $page = "index";
 include_once 'template/head.php';
 ?>
@@ -56,7 +58,17 @@ include_once 'template/head.php';
             </div>
 
             <div class="col-md-3">
-                Sidebar
+                <div class="tab-content">
+                    <a href="#" class="tab-pane <?php if($tab == "") { ?>active<?php } ?>">Files</a>
+                    <a href="#" class="tab-pane <?php if($tab == "issues") { ?>active<?php } ?>">Issues</a>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">Home Tab.</div>
+                    <div class="tab-pane" id="profile">Profile Tab.</div>
+                    <div class="tab-pane" id="messages">Messages Tab.</div>
+                    <div class="tab-pane" id="settings">Settings Tab.</div>
+                </div>
             </div>
 
         </div>
