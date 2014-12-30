@@ -113,7 +113,11 @@
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>GitMap</title>
+		<?php if($page == "index") { ?>
+			<title>GitMap</title>
+		<?php } else { ?>
+			<title>GitMap | <?php echo $title; ?></title>
+		<?php } ?>
 
 		<link rel="icon" type="image/png" href="<?php echo getConfig('root'); ?>img/logo-black.png">
 

@@ -363,4 +363,13 @@
         border-right: 6px solid transparent;
         border-left: 6px solid transparent;
     }
+
+
+    .tabs-right>li.active>a {
+        border-right: 4px solid <?php echo getConfig('color'); ?>;
+    }
+
+    .tabs-right>li.active>a:hover {
+        border-right: 7px solid <?php echo getConfig('color'); ?>;
+    }
 </style>

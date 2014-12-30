@@ -19,11 +19,10 @@ $result = mysqli_query($connection, $sql);
 if ($result == false)
     exit('Error code users <br>' . mysqli_error($connection));
 $row = mysqli_fetch_assoc($result);
-
-$page = "user";
 $user = $row['username'];
 
-$page = "index";
+$page = "user";
+$title = $user;
 include_once 'template/head.php';
 ?>
 
@@ -55,15 +54,23 @@ include_once 'template/head.php';
                     </div>
                     <?php
                     while($reporow = mysqli_fetch_assoc($reporesult)) {
+                        $tagsql = "SELECT * FROM tags WHERE id='" . $reporow['tag'] . "';";
+                        $tagresult = mysqli_query($connection, $tagsql);
+                        if ($tagresult == false)
+                            exit('Error code tag <br>' . mysqli_error($connection));
+                        $tagrow = mysqli_fetch_assoc($tagresult);
                         ?>
                         <div class="panel-body">
                             <a href="<?php echo getConfig('root'); ?><?php echo $row['username']; ?>/<?php echo $reporow['name']; ?>">
                                 <?php if($reporow['logo'] != "") { ?>
-                                    <img src="<?php echo getConfig('root') . $reporow['logo']; ?>" height="130" class="img-rounded" alt="<?php echo $reporow['name']; ?>">
+                                    <div class="pull-left" style="padding-right: 5px">
+                                        <img src="<?php echo getConfig('root') . $reporow['logo']; ?>" width="130" class="img-rounded" alt="<?php echo $reporow['name']; ?>">
+                                    </div>
                                 <?php } ?>
                             </a>
                             <a href="<?php echo getConfig('root'); ?><?php echo $row['username']; ?>/<?php echo $reporow['name']; ?>" style="font-size: 50px;"><?php echo $reporow['name']; ?></a>
                             <p><?php echo $reporow['desc']; ?></p>
+                            <p><span class="label label-primary" style="background-color: <?php echo $tagrow['color']; ?>;"><?php echo $tagrow['name']; ?></span></p>
                         </div>
                     <?php
                     }
