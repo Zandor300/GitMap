@@ -53,22 +53,19 @@ include_once 'template/head.php';
     <div class="container content">
         <div class="row">
 
-            <div class="col-md-9">
+            <div class="col-md-10">
                 -Files-
             </div>
 
-            <div class="col-md-3">
-                <div class="tab-content">
-                    <a href="#" class="tab-pane <?php if($tab == "") { ?>active<?php } ?>">Files</a>
-                    <a href="#" class="tab-pane <?php if($tab == "issues") { ?>active<?php } ?>">Issues</a>
-                </div>
-
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">Home Tab.</div>
-                    <div class="tab-pane" id="profile">Profile Tab.</div>
-                    <div class="tab-pane" id="messages">Messages Tab.</div>
-                    <div class="tab-pane" id="settings">Settings Tab.</div>
-                </div>
+            <div class="col-xs-2">
+                <ul class="nav nav-tabs tabs-right"><!-- 'tabs-right' for right tabs -->
+                    <li class="<?php if($tab == "") { ?>active<?php } ?>">
+                        <a href="#">Files</a>
+                    </li>
+                    <li class="<?php if($tab == "issues") { ?>active<?php } ?>">
+                        <a href="#">Issues</a>
+                    </li>
+                </ul>
             </div>
 
         </div>
