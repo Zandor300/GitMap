@@ -4,5 +4,8 @@ RewriteEngine on
 
 RewriteRule ^/GitMap/index.php$ /GitMap [R]
 
-RewriteCond %{REQUEST_URI} ([a-z\-]+)
-RewriteRule ^([a-z\-]+)(/)?$ /GitMap/user.php
+RewriteCond %{REQUEST_URI} ([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)
+RewriteRule ^([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)(/)?$ /GitMap/repository.php
+
+RewriteCond %{REQUEST_URI} ([a-zA-Z0-9\-]+)
+RewriteRule ^([a-zA-Z0-9\-]+)(/)?$ /GitMap/user.php
